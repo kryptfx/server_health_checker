@@ -1,0 +1,25 @@
+name: URL Check
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # This cron expression schedules the job to run every hour
+
+jobs:
+  check-url:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Check URL Response
+        run: |
+          URL="https://conceptual-daffi-firestream-816efc5e.koyeb.app/stream/25?hash=24cabb"  # Replace with your URL
+          RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 5 "$URL")
+          
+          if [[ "$RESPONSE" == "200" || "$RESPONSE" == "206" ]]; then
+            echo "URL check succeeded with status code $RESPONSE"
+          else
+            echo "URL check failed with status code $RESPONSE"
+            exit 1
+          fi
