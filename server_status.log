@@ -1,0 +1,15 @@
+2024-09-11 02:02:32,274 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.103:5000
+2024-09-11 02:02:32,274 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-11 02:02:39,819 - INFO - 192.168.0.103 - - [11/Sep/2024 02:02:39] "[33mGET / HTTP/1.1[0m" 404 -
+2024-09-11 02:04:05,482 - INFO - Server is active to give files. Status code: 206
+2024-09-11 02:04:06,339 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.103:5000
+2024-09-11 02:04:06,351 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-11 02:04:09,917 - INFO - 192.168.0.103 - - [11/Sep/2024 02:04:09] "[33mGET / HTTP/1.1[0m" 404 -
+2024-09-11 02:04:32,448 - INFO - 127.0.0.1 - - [11/Sep/2024 02:04:32] "[33mGET / HTTP/1.1[0m" 404 -
+2024-09-11 02:04:32,703 - INFO - 127.0.0.1 - - [11/Sep/2024 02:04:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
